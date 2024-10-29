@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pure CSS3 Responsive 3D Cover Flow and Image Slider </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="slider">
+    <input class="slider-target" type="radio" id="slide-0" name="slider"/>
+    <input class="slider-target" type="radio" id="slide-1" name="slider"/>
+    <input class="slider-target" type="radio" id="slide-2" name="slider"/>
+    <input class="slider-target" type="radio" id="slide-3" name="slider" checked="checked"/>
+    <input class="slider-target" type="radio" id="slide-4" name="slider"/>
+    <input class="slider-target" type="radio" id="slide-5" name="slider"/>
+    <input class="slider-target" type="radio" id="slide-6" name="slider"/>
+    <div class="slider__viewport">
+      <div class="slider__viewbox">
+        <div class="slider__container">
+          <div class="slider-item">
+            <div class="slider-item__inner">
+              <label class="slider-item__trigger" for="slide-0" title="Show product 0"></label><a class="card" href="https://www.comune.venezia.it/" target="_blank" style="--card-image:url('./img_venice/fotoA2.jpg')">
+                <div class="card__container">
+                  <div class="card__image"></div>
+                  <div class="card__content">
+                    <p class="card-meta"><span class="card-meta-item">ID percorso:</span><span class="card-meta-item">"A"</span></p>
+                    <h2 class="card-title">Basilica di Santa Maria della Salute</h2>
+                    <ul class="card-tag-list">
+                      <li class="card-tag-list-item">Italia</li>
+                      <li class="card-tag-list-item">Veneto</li>
+                      <li class="card-tag-list-item">Venezia</li>
+                    </ul>
+                    <p class="card-description">La basilica, ultimata nel 1681, è stata costruita in segno di ringraziamento alla Vergine Maria per la fine della peste che colpì Venezia tra il 1630 e il 1631.</p>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__inner">
+              <label class="slider-item__trigger" for="slide-1" title="Show product 1"></label><a class="card" href="https://www.comune.venezia.it/" target="_blank" style="--card-image:url('./img_venice/fotoB.jpg')">
+                <div class="card__container">
+                  <div class="card__image"></div>
+                  <div class="card__content">
+                    <p class="card-meta"><span class="card-meta-item">ID percorso:</span><span class="card-meta-item">"B"</span></p>
+                    <h2 class="card-title">Ponte dei Sospiri</h2>
+                    <ul class="card-tag-list">
+                      <li class="card-tag-list-item">Italia</li>
+                      <li class="card-tag-list-item">Veneto</li>
+                      <li class="card-tag-list-item">Venezia</li>
+                    </ul>
+                    <p class="card-description">Progettato dall'architetto Antonio Contino e completato nel 1600, il ponte collega il Palazzo Ducale con le Prigioni Nuove, situate sull'altro lato del Rio di Palazzo.</p>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__inner">
+              <label class="slider-item__trigger" for="slide-2" title="Show product 2"></label><a class="card" href="https://www.comune.venezia.it/" target="_blank" style="--card-image:url('./img_venice/fotoD.jpg')">
+                <div class="card__container">
+                  <div class="card__image"></div>
+                  <div class="card__content">
+                    <p class="card-meta"><span class="card-meta-item">ID percorso:</span><span class="card-meta-item">"C"</span></p>
+                    <h2 class="card-title">Ponte di Rialto</h2>
+                    <ul class="card-tag-list">
+                      <li class="card-tag-list-item">Italia</li>
+                      <li class="card-tag-list-item">Veneto</li>
+                      <li class="card-tag-list-item">Venezia</li>
+                    </ul>
+                    <p class="card-description">Completato nel 1591, il ponte è un arco unico in pietra, con una lunghezza di circa 48 metri, una larghezza di 22 metri e sostenuto da 12.000 pali di legno conficcati nel fondale del Canal Grande</p>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="slider-item"> <!-- SEZIONE DEDICATA AL CARICAMENTO DEL VIDEO  https://www.gumlet.com/learn/how-to-autoplay-html-video/-->
+            <div class="slider-item__inner">
+              <label class="slider-item__trigger" for="slide-3" title="Show product 3"></label><a class="card">
+                <div class="card__container">
+                  <div class="card__image">
+                    <video id="videoVenice" controls width="100%" height="100%" autoplay loop muted style="object-fit: cover;"> <!-- il video è adattato al macro div che lo contiene -->
+                      <source src="./img_venice/videoVenice.mp4" type="video/mp4">
+                      <source src="./img_venice/videoVenice.ogg" type="video/ogg">
+                      Il tuo browser non supporta il tag video.
+                    </video>
+                  </div>
+                  <div class="card__content">
+                    <p class="card-meta"><span class="card-meta-item"></span><span class="card-meta-item"></span></p>
+                    <h2 class="card-title">Venice</h2>
+                    <ul class="card-tag-list">
+                      <li class="card-tag-list-item">Italia</li>
+                      <li class="card-tag-list-item">Veneto</li>
+                      <li class="card-tag-list-item">Venezia</li>
+                    </ul>
+                    <p class="card-description">The beautiful city in the World!</p>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__inner">
+              <label class="slider-item__trigger" for="slide-4" title="Show product 4"></label><a class="card" href="https://www.comune.venezia.it/" target="_blank" style="--card-image:url('./img_venice/fotoE2.jpg')">
+                <div class="card__container">
+                  <div class="card__image"></div>
+                  <div class="card__content">
+                    <p class="card-meta"><span class="card-meta-item">ID percorso:</span><span class="card-meta-item">"D"</span></p>
+                    <h2 class="card-title">Piazza San Marco</h2>
+                    <ul class="card-tag-list">
+                      <li class="card-tag-list-item">Italia</li>
+                      <li class="card-tag-list-item">Veneto</li>
+                      <li class="card-tag-list-item">Venezia</li>
+                    </ul>
+                    <p class="card-description">È l'unica piazza di Venezia a essere chiamata "piazza", mentre le altre aree aperte della città sono chiamate "campi".</p>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__inner">
+              <label class="slider-item__trigger" for="slide-5" title="Show product 5"></label><a class="card" href="https://www.comune.venezia.it/" target="_blank" style="--card-image:url('./img_venice/fotoF2.jpg')">
+                <div class="card__container">
+                  <div class="card__image"></div>
+                  <div class="card__content">
+                    <p class="card-meta"><span class="card-meta-item">ID percorso:</span><span class="card-meta-item">"E"</span></p>
+                    <h2 class="card-title">Hotel Danieli</h2>
+                    <ul class="card-tag-list">
+                      <li class="card-tag-list-item">Italia</li>
+                      <li class="card-tag-list-item">Veneto</li>
+                      <li class="card-tag-list-item">Venezia</li>
+                    </ul>
+                    <p class="card-description">Ufficialmente conosciuto come The St. Regis Venice, è uno degli hotel più prestigiosi e storici di Venezia. L'edificio principale, il Palazzo Dandolo, risale al XIV secolo ed era originariamente un palazzo nobiliare.</p>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-item__inner">
+              <label class="slider-item__trigger" for="slide-6" title="Show product 6"></label><a class="card" href="https://www.comune.venezia.it/" target="_blank" style="--card-image:url('./img_venice/fotoG.jpg')">
+                <div class="card__container">
+                  <div class="card__image"></div>
+                  <div class="card__content">
+                    <p class="card-meta"><span class="card-meta-item">ID percorso:</span><span class="card-meta-item">"E"</span></p>
+                    <h2 class="card-title">Gran Teatro La Fenice</h2>
+                    <ul class="card-tag-list">
+                      <li class="card-tag-list-item">Italia</li>
+                      <li class="card-tag-list-item">Veneto</li>
+                      <li class="card-tag-list-item">Venezia</li>
+                    </ul>
+                    <p class="card-description">Fondato nel 1792, La Fenice è stata ricostruita due volte dopo devastanti incendi nel 1836 e nel 1996. E' stato il luogo di debutto di numerose opere di compositori celebri come Verdi, Rossini e Bellini. </p>
+                  </div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+
+  <!-- JAVASCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('videoVenice');
+      if (video) {
+        video.playbackRate = 0.5;
+      }
+    });
+  </script>
+  
+</body>
+</html>
